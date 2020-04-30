@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular Área</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/Logo.PNG" alt="Logo">
+        <nav>
+            <ul>
+                <li><a href="index.html"><b>Quadrado</b></a></li>
+                <li><a href="retangulo.html">Retângulo</a></li>
+                <li><a href="triangulo.html">Triângulo</a></li>
+                <li><a href="circunferencia.html">Circunferência</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <p>A área do quadrado corresponde ao tamanho da superfície dessa figura. Lembre-se que o quadrado é um
+            quadrilátero regular que apresenta quatro lados congruentes (mesma medida).</p>
+        <p>Além disso, ele possui quatro ângulos internos de 90°, chamados de ângulos retos. Assim, a soma dos ângulos
+            internos do quadrado totaliza 360°.</p>
+        <section>
+            <img src="images/Quadrado.PNG" alt="Área do Quadrado" class="imgCalculoArea">
+            <form>
+                <input type="text" name="lado" placeholder="Entre com o lado em cm">
+                <input class="botaoCalcular" type="button" value="Calcular" onclick="calcular(lado.value)">
+                <br>
+                Área = <input type="text" id="txtResultado" value="" readonly>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Demonstração de site, textos e figuras retiradas do site:</p>
+        <p>https://www.todamateria.com.br/</p>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    function calcular(lado) {
+        txtResultado.value = (lado * lado) + " cm";
+    }
+</script>
